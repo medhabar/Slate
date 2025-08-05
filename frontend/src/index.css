@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+	background: linear-gradient(125deg, #09098c, #f6efa7);
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left, main .right {
+  height: 93vh;
+  flex-basis: 50%;
+  border-radius: 1.5vw;
+}
+
+main .left {
+  background-color: rgb(35, 35, 35);
+  position: relative;
+  color: #fff;
+}
+
+.left .code, .code pre, .code pre code {
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+	border-radius: 1.5vw;
+	background-color: transparent;
+}
+
+main .right {
+  background-color: #e8e3e3;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  overflow: auto;
+}
+
+main .left .review-btn {
+	position: absolute;
+	bottom: 2.5rem;
+	right: 4rem;
+	border-radius: 7px;
+	height: 2.5rem;
+	width: 8rem;
+	background-color: rgb(224, 222, 218);
+  color: black;
+  cursor: pointer;
+}
+
+.review-btn p {
+	font-size: larger;
+	font-weight: 500;
+	padding-top: 0.5rem;
+	padding-left: 2rem;
+}
+
+textarea:focus,
+[contenteditable]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+main .right::-webkit-scrollbar {
+  width: 0;  /* Chrome/Safari */
+  height: 0;
+}
+
+main .right ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+main .right li {
+  margin-bottom: 0.5rem;
+}
